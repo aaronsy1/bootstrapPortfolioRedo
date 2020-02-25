@@ -10,3 +10,40 @@
 {
     list-style-type: none;
 }
+
+.textOverImage
+{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin:4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition:0.5s;
+}
+
+.textOverImage:hover
+{
+    background-size: 110%;
+}
+
+.textOverImage:after
+{
+    position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     word-wrap: break-word;
+     overflow: hidden;
+     background-color: rgba(0, 0,0, 0.6);
+     color: #fff;
+     padding: 8px;
+     opacity: 0;
+     content: attr(data-text);
+}
+
+.textOverImage:hover:after
+{
+    opacity: 1;
+}
