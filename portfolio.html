@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/portfolio.css">
     <!--font awesome for social media icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -41,9 +41,9 @@
 
     </nav>
 
-    <!--Carousel-->
-    <div class="container">
-        <h1>Featured Projects</h1>
+    <!-- Carousel -->
+    <!-- <div class="container">
+        <h1>Featured Project</h1>
         <div id="magicCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#magicCarousel" data-slide-to="0" class="active"></li>
@@ -84,23 +84,36 @@
                     <span class="sr-only">next</span>
                 </a>
             </div>
-        </div>
+        </div> -->
 
+           <div class="container">
+               <h2>Featured Project</h2>
+               <div class="row">
+                   <div class="col-md-4">
+                       <img src="./assets/images/photo1.jpg" alt="">
+                   </div>
+                   <div class="col-md-7 m-4">
+                       <h3>Rentr App</h3>
+                       <hr>
+                       <p>Group Project: Full Stack MERN app. Description: Rentr is an app used for listing and looking for products to rent out/rent. 
+                           I was in charge of Google Maps API and Oauth. Technologies used: React, Express.js, Mysql, node.js, Oauth, Google maps API 
+                           <hr>
+                           Login: test01@test.com PW: test</p>
+
+                           <a href = "https://limitless-thicket-78191.herokuapp.com/"><button type="button" class="btn btn-primary">Check it out</button></a>
+
+                   </div>
+               </div>
+           </div>
+         
+    
         <!--Other works-->
+    <div class="container">
         <h2 class="pt-4">Other Works</h2>
-
         <div class="row p-2">
-        <a href="https://github.com/aaronsy1/liri-node-app">
-            <div class="textOverImage flex-fill" style="background-image:url(./assets/images/node.jpg)" ;
-                data-text="Node app portraying knowledge in API use. After npm install and running liri.js you are prompted to search for either movie, song, or tweet."
-            >
-
-            </div>
-        </a>
-
-        <a href="https://github.com/aaronsy1/bamazon">   
-            <div class=" textOverImage flex-fill" style="background-image:url(./assets/images/node.jpg)" ;
-                data-text="Node App portraying basic knowledge of MySQL skill. This app is an inventory checker using inquirer to interact with the js. After npm install run bamazon to have inquirer guide you through the inventory check. "
+        <a href="https://aaronsy1.github.io/hangman/">
+            <div class=" textOverImage flex-fill" style="background-image:url(./assets/images/persona.jpg)" ;
+                data-text="Hangman Game: Frontend: Technologies used: HTML, CSS, Bootstrap3, Javascript/Jquery. Persona 5 inspired. "
             >
 
             </div>
@@ -108,7 +121,7 @@
 
         <a href="https://aaronsy1.github.io/giphy/">
             <div class=" textOverImage flex-fill" style="background-image:url(./assets/images/giphy.png)" ;
-                data-text="Giphy App. Website that utilizes Giphy API to populate 10 gifs not jifs from the API. There are some populated themes already loaded but option to search your own gifs."
+                data-text="Giphy App. Frontend: Technologies used:Giphy API, Ajax/Axios, HTML, CSS, Bootstrap3, Javascript/Jquery"
             >
 
             </div>
@@ -116,34 +129,45 @@
 
         <a href="https://aaronsy1.github.io/TriviaGame/">
             <div class=" textOverImage flex-fill" style="background-image:url(./assets/images/pokemon.png)" ;
-                data-text="Trivia game app where I used my favorite childhood show Pokemon as inspiration. I meddled around using different fonts and timers to make the game more interesting. BEWARE i added audio which can be surprising. "
+                data-text="Trivia game app. Frontend: Technologies used: HTML, CSS, Bootstrap3, Javascript/Jquery. Pokemon inspired."
+            >
+
+            </div>
+        </a>
+    </div>
+
+        <div class="row p-2">
+            
+        <a href="https://aaronsy1.github.io/firstGroupProject/">
+            <div class=" textOverImage flex-fill" style="background-image:url(./assets/images/dnd.jpg)" ;
+                data-text="Group Project: Dungeons and Dragons Helper App: Full Stack In charge of the login authorizations, firebase database to meet new players and post, as well as Google Maps API, UI"
+            >
+
+            </div>
+        </a>
+        <a href="https://github.com/aaronsy1/liri-node-app">
+            <div class="textOverImage flex-fill" style="background-image:url(./assets/images/liri.png)" ;
+                data-text="Liri node app Backend: Technologies used: Spotify/OMDB/Twitter API, node.js, inquirer"
             >
 
             </div>
         </a>
 
-        <a href="#">
-            <div class=" textOverImage flex-fill" style="background-image:url(./assets/images/comingSoon.png)" ;
-                data-text="Stay in touch to see what's coming next!"
+        <a href="https://github.com/aaronsy1/bamazon">   
+            <div class=" textOverImage flex-fill" style="background-image:url(./assets/images/bamazon.png)" ;
+                data-text="Bamazon node app (warehouse inventory mock) Backend: Technologies used: node.js, inquirer, mysql "
             >
 
             </div>
         </a>
 
-        <a href="#">
-            <div class=" textOverImage flex-fill" style="background-image:url(./assets/images/comingSoon.png)" ;
-                data-text="Stay in touch to see what's coming next!"
-            >
-
-            </div>
-        </a>
 
         </div>
 
 
 
     </div>
-
+</div>
     <!--Social Media-->
     <div class="container footer" style = "padding-top: 60px;">
         <ul class ="d-flex justify-content-center socialLinks">

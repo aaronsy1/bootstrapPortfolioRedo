@@ -1,15 +1,16 @@
-.jumbotron
-{
-    background-image: url("../images/coding.jpg") ;
-    background-size: cover;
-    min-height: 600px;
-    
+
+img{
+max-width: 20vw;
+max-height: 30vh;
 }
+
 
 .socialLinks
 {
     list-style-type: none;
 }
+
+
 
 .textOverImage
 {
@@ -47,3 +48,18 @@
 {
     opacity: 1;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    img{
+        max-width: 30vw;
+        max-height: 40vh;
+    }
+  }
+
+  @media only screen and (max-width: 1366px) {
+   
+    img{
+     display: none;
+    }
+  }
